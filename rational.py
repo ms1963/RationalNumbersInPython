@@ -210,12 +210,6 @@ class Rational:
         r3 = Rational.fractionToRational(fraction, leadingzeros)
         return r1+r2+r3
         
-r = Rational.one()
-for i in range(1,6): r *= Rational(1,i) 
-print(r)
-print(r.reciprocal())
-
-print([(Rational(1,i)) for i in range(1,11)])
         
 
 
