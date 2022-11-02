@@ -22,5 +22,16 @@ print(Rational.periodToRational(6)) # 0.6666666....
   
 print(Rational.periodToRational(9)) # 0.9999999....
   => 1
+  
+print(float(Rational.periodicFloatToRational(123, 456, 0, 789))) # 123.456789789789...., r = 41111111 / 333000
+  => 123.4567897897898
+  
+print(float(Rational.periodicFloatToRational(123, 456, 1, 789))) # 123.045678978978...., r = 409742111 / 3330000
+  => 123.04567897897898
+  
+print(Rational.e(20))
+  => 6613313319248079872 / 2432902008176640000 # e in float: 2.718281828459045
+ 
+ 
  
 ```
