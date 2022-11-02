@@ -1,5 +1,5 @@
 # Rational Numbers in Python
-This class implemenets rational numbers in Python.
+This class implements rational numbers in Python.
 
 It provides the most important operators and functions.
 It allows to convert periodic decimal numbers into rational numbers as well as other conversions to and from int and float.
