@@ -173,10 +173,13 @@ class Rational:
     # Number of leading zeros in leadingzeros: if for example, 
     # the number is 0.000fraction leadingzeros is 3
     def fractionToRational(n, leadingzeros = 0):
-        list = []
-        s = str(n)
-        for i in range(0, len(s)): list.append(int(s[i]))
-        return Rational(n, pow(10, leadingzeros + len(list)))
+        if n == 0: 
+            return Rational.zero()
+        else:
+            list = []
+            s = str(n)
+            for i in range(0, len(s)): list.append(int(s[i]))
+            return Rational(n, pow(10, leadingzeros + len(list)))
         
     def floatToRational(x, digits=0):
         left = abs(int(f))
@@ -197,13 +200,15 @@ class Rational:
             
             
     # for example, in the float 2.00125879879879 we would use 
-    # number = 2, lz = 2 (leading zeros), fraction = 125, period = 879
+    # number = 2, leadingzeros = 2, fraction = 125, period = 879
     def periodicFloatToRational(number, fraction, leadingzeros, period):
         r1 = Rational.intToRational(number)
-        r2 = Rational.periodToRational(period, leadingzeros+getLength(fraction))
+        if fraction == 0:
+            r2 = Rational.periodToRational(period,leadingzeros)
+        else:
+            r2 = Rational.periodToRational(period, leadingzeros+getLength(fraction))
         r3 = Rational.fractionToRational(fraction, leadingzeros)
         return r1+r2+r3
-        
         
 
         
