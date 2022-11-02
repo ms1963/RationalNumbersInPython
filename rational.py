@@ -113,7 +113,7 @@ class Rational:
             return str(int(self.nom)) + " / " + str(int(self.denom))
             
     def __repr__(self):
-        return "Rational number"
+        return "Rational number: " + str(self.nom) + " / " + str(self.denom)
         
     def __pow__(self, exp):
         e = int(exp)
@@ -211,4 +211,5 @@ class Rational:
         return r1+r2+r3
         
 
-        
+
+
