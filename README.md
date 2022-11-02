@@ -18,8 +18,6 @@ print(r.reciprocal())
   
 print((-Rational(1,2)+Rational(1,3)).reciprocal() * Rational(1,6)+Rational(3,2))
   => 1 / 2
-
-
   
 print(Rational.periodToRational(6)) # 0.6666666....
   => 2 / 3
