@@ -8,6 +8,10 @@ The method e(digits) calculates the Taylor series of exp(x) at x = 1 with digits
 A unit test file is available as well.
 
 ```
+
+print([(Rational(1,i)) for i in range(1,11)])
+  => [1 / 1, 1 / 2, 1 / 3, 1 / 4, 1 / 5, 1 / 6, 1 / 7, 1 / 8, 1 / 9, 1 / 10]
+
 r = Rational.one()
 for i in range(1,6): r *= Rational(1,i)
 print(r)
@@ -32,9 +36,6 @@ print(float(Rational.periodicFloatToRational(123, 456, 1, 789))) # 123.045678978
   
 print(Rational.e(20))
   => 6613313319248079872 / 2432902008176640000 # e in float: 2.718281828459045
- 
-print(repr(Rational(1,3)))
-  => Rational number: 1 / 3
   
 print(Rational(1,3) < Rational(1,2))
   => True
