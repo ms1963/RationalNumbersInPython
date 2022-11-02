@@ -12,13 +12,14 @@ r = Rational.one()
 for i in range(1,6):
     r *= Rational(1,i)
 print(r)
+print(r.reciprocal())
   => 1 / 120
+     120
   
 print((-Rational(1,2)+Rational(1,3)).reciprocal() * Rational(1,6)+Rational(3,2))
   => 1 / 2
 
-print(r.reciprocal())
-  => 120
+
   
 print(Rational.periodToRational(6)) # 0.6666666....
   => 2 / 3
