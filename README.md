@@ -9,8 +9,7 @@ A unit test file is available as well.
 
 ```
 r = Rational.one()
-for i in range(1,6):
-    r *= Rational(1,i)
+for i in range(1,6): r *= Rational(1,i)
 print(r)
 print(r.reciprocal())
   => 1 / 120
