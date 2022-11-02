@@ -1,4 +1,4 @@
-# RationalNumbersInPython
+# Rational Numbers in Python
 This class implemenets rational numbers in Python.
 
 It provides the most important operators and functions.
