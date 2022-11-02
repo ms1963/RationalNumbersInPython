@@ -16,4 +16,11 @@ print(r)
 
 print(r.reciprocal())
   => 120
+  
+print(Rational.periodToRational(6)) # 0.6666666....
+  => 2 / 3
+  
+print(Rational.periodToRational(9)) # 0.9999999....
+  => 1
+ 
 ```
